@@ -12,26 +12,21 @@ namespace Toponimia.Models
         public string Designacao { get; set; }
         public Freguesia Freguesia { get; set; }
 
-        //CRIAÇÃO DE UM OBJETO TOPÓNIMO "INLINE"
-        //Models.Toponimo teste = new Models.Toponimo
-        //{
-        //    Id = Guid.NewGuid(),
-        //    Designacao = "Rua de Cima",
-        //    Freguesia = new Models.Freguesia
-        //    {
-        //        Id = Guid.NewGuid(),
-        //        Designacao = "Freguesia de Nossa Senhora da Ajuda",
-        //        Concelho = new Models.Concelho
-        //        {
-        //            Id = Guid.NewGuid(),
-        //            Designacao = "Vila Nova de Gaia",
-        //            Distrito = new Models.Distrito
-        //            {
-        //                Id = Guid.NewGuid(),
-        //                Designacao = "Porto"
-        //            }
-        //        }
-        //    }
-        //};
+        public int Topo_Inicio { get; set; }
+        public int Topo_Fim { get; set; }
+
+        public string Latitude { get; set; }
+
+        public string Longitude { get; set; }
+
+        public Tipo_Arruamento Tipo_Arruamento { get; set; }
+
+        public double Extensao { get; set; }
+
+        public double Area { get; set; }
+
+        public string Observacoes { get; set; }
+
+
     }
 }
