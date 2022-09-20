@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Toponimia.ViewModels"
+             x:Class="Toponimia.Views.InserirDistrito">
+
+    <ContentPage.Resources>
+        <StyleSheet Source="../Styles/custom_button.css" />
+    </ContentPage.Resources>
+    
+    <ContentPage.BindingContext>
+        <local:VM_InserirDistrito />
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry StyleClass="EntryClass" Text="{Binding Designacao_LocalProperty}" />
+            <Button Text="Inserir" Command="{Binding CommandInsert}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

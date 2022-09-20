@@ -1,0 +1,16 @@
+﻿
+.EntryClass {
+    background: #000000;
+    color: #fff;
+}
+
+button {
+    background: #9738ca;
+    border-radius: 28;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20;
+    padding: 10 20 10 20;
+    margin: 0 20 0 20;
+    text-decoration: none;
+}

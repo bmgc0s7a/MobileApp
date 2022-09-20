@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Toponimia.ViewModels"
+             x:Class="Toponimia.Views.Dashboard">
+
+    <ContentPage.BindingContext>
+        <local:VM_Dashboard />
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Text="Criar Distritos" Command="{Binding OpenPageNewDistrito}"></Button>
+            <Button Text="Criar Concelhos" Command="{Binding OpenPageNewConcelho}"></Button>
+            <Button Text="Criar Freguesias" Command="{Binding OpenPageNewFreguesia}"></Button>
+            <Button Text="Criar Topónimos" Command="{Binding OpenPageNewToponimo}"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
