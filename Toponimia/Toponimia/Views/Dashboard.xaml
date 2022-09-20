@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Toponimia.ViewModels"
-             x:Class="Toponimia.Views.Dashboard">
+             x:Class="Toponimia.Views.Dashboard" Title="Dashboard">
 
     <ContentPage.BindingContext>
         <local:VM_Dashboard />
@@ -10,10 +10,11 @@
     
     <ContentPage.Content>
         <StackLayout>
-            <Button Text="Criar Distritos" Command="{Binding OpenPageNewDistrito}"></Button>
-            <Button Text="Criar Concelhos" Command="{Binding OpenPageNewConcelho}"></Button>
-            <Button Text="Criar Freguesias" Command="{Binding OpenPageNewFreguesia}"></Button>
-            <Button Text="Criar Topónimos" Command="{Binding OpenPageNewToponimo}"></Button>
+            
+            <Button Text="Gestão" Command="{Binding OpenPageGestao}"></Button>
+            <Button Text="Listagem" Command="{Binding OpenPageListagem}"></Button>
+            <Button Text="Pesquisas" Command="{Binding OpenPagePesquisa}"></Button>
+       
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -10,27 +10,24 @@ namespace Toponimia.ViewModels
     {
         public VM_Dashboard()
         {
-            OpenPageNewDistrito = new Command(async () =>
+            OpenPageGestao = new Command(async () =>
             {
-                await Application.Current.MainPage.Navigation.PushAsync(new Views.InserirDistrito());
+                await Application.Current.MainPage.Navigation.PushAsync(new Views.DefaultPage("Gestão"));
             });
-            OpenPageNewConcelho = new Command(() =>
+            OpenPageLista = new Command(async () =>
             {
-
+                 await Application.Current.MainPage.Navigation.PushAsync(new Views.DefaultPage("Lista"));
             });
-            OpenPageNewFreguesia = new Command(() =>
-            {
-
+             OpenPagePesquisa = new Command(async () =>
+             {
+                 await Application.Current.MainPage.Navigation.PushAsync(new Views.DefaultPage("Pesquisa"));
             });
-            OpenPageNewToponimo = new Command(() =>
-            {
-
-            });
+         
         }
 
-        public Command OpenPageNewDistrito { get; }
-        public Command OpenPageNewConcelho { get; }
-        public Command OpenPageNewFreguesia { get; }
-        public Command OpenPageNewToponimo { get; }
+        public Command  OpenPageGestao { get; }
+        public Command  OpenPageLista { get; }
+        public Command  OpenPagePesquisa { get; }
+       
     }
 }
